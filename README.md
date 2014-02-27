@@ -1,9 +1,9 @@
 Students Redesign Banking 
 ====================================
 
-###A collaboration Between Dynamic Web authoring: Client side & Server Side
+###A Collaboration Between Dynamic Web Authoring: Client Side & Server Side
 
-**This a student assignment between 4 web design students. Feel free to watch the work. **
+**This a student assignment between 4 web design students. Feel free to watch the work.**
 
 ##The Brief
 
