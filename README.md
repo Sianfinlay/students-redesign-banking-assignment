@@ -21,5 +21,3 @@ Each group member must contribute and document their contributions in their own 
 * Research
 
 **List will be update over the course of the initial stage of the assignment.**
-
-*this is a test sentence for github for mac*
