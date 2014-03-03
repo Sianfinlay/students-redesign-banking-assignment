@@ -1,6 +1,6 @@
 Students Redesign Banking 
 ====================================
-Just a test sian you see this
+
 
 ###A Collaboration Between Dynamic Web Authoring: Client Side & Server Side
 
@@ -13,6 +13,8 @@ We are to create a dynamic website for the allocated scenario to demonstrate our
 Each group member must contribute and document their contributions in their own web spaces to insure this. 
 
 **Our Scenario is:** Bank mortgage sales
+
+
 
 ## The To Do List
 
