@@ -19,12 +19,12 @@ Each group member must contribute and document their contributions in their own 
 | STAFF MEMBER  | MORTGAGE      | CUSTOMER       | PROPERTY |
 | ------------- |:-------------:|---------------:|---------:|
 | Staff_id      | Mort_id       | Cust_id        | Prop_id  |
-| Image         | Prop_id       | Name           |
-| Name          | Mort_Type     | Address        |
-| Location      | Date_Done     | Martial Status |
-| Branch_Name   | Due_Date      | Age            |
-| Position      | Staff_id      | Income         |
-|               | Price         | Tel            |
+| Image         | Prop_id       | Name           | Cust_id  |
+| Name          | Mort_Type     | Address        | Address  |
+| Location      | Date_Done     | Martial Status | Type     |
+| Branch_Name   | Due_Date      | Age            | Price    |
+| Position      | Staff_id      | Income         | No_of_opp|
+|               | Price         | Tel            | Rent_buy |
 |               | Interest      | Email          |
 ## The To Do List
 
