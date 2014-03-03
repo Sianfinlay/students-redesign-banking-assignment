@@ -14,8 +14,18 @@ Each group member must contribute and document their contributions in their own 
 
 **Our Scenario is:** Bank mortgage sales
 
+####The database
 
-
+| STAFF MEMBER  | MORTGAGE      | CUSTOMER       | PROPERTY |
+| ------------- |:-------------:|---------------:|---------:|
+| Staff_id      | Mort_id       | Cust_id        | Prop_id  |
+| Image         | Prop_id       | Name           |
+| Name          | Mort_Type     | Address        |
+| Location      | Date_Done     | Martial Status |
+| Branch_Name   | Due_Date      | Age            |
+| Position      | Staff_id      | Income         |
+|               | Price         | Tel            |
+|               | Interest      | Email          |
 ## The To Do List
 
 * Entity Relationship Modelling
