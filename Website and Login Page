@@ -1,0 +1,38 @@
+For Assignment 3B as a group we have to create a simple hierarchy of pages (representing a small website) with
+-	Use of mysqli_ rather than mysql_ commands
+-	Sessions set on login to ensure that pages are not accessible unless logged in as a valid user
+-	A user table is required in MySQL to store & check usernames & passwords [See Worksheets on Sessions & Logins]
+-	A login page is implemented with login checking
+o	For username & passwords individually (i.e. both checked individually so that a specific response whether the username &/or the password is incorrect using the user table in your database)
+o	If either is invalid a message stating the problem should be returned to the user
+o	(A valid username and password should be stated in the Word file)
+-	A user registration webpage to register a username & password to be stored in a users table in MySQL   users(ID, username, password)
+o	Username should be at least 6 characters
+o	Password should be a minimum of 8 characters
+o	Pattern recognition checking on the password strength using preg_match( ) should ensure that it has
+•	First character as a letter (upper or lowercase)
+•	At least one lowercase letter
+•	At least one uppercase letter
+•	At least one number
+•	At least one @ or underscore (_ )or hyphen (-) symbol
+•	Using regular expressions most efficiently
+-	A retrieval query to display the password for a specified username (entered in a textbox)
+-	an update query to allow changing of a password (with password strength checking) of a specified username to a new password (entered twice and compared for match otherwise re-input)
+-	an insert query to allow a new username & password to be created with checking(see above)
+-	a delete query to allow a user to de-register (removal of login details etc)
+-	Webpage Form for uploading images to a directory
+-	A logout webpage page destroys sessions & returns to the login page
+-	Webpage containing links to each of the  individual queries to be created by group members (two per member)
+(2 queries per member, on each of the 4 core tables – i.e. each member must use a different table) 
+
+<Rebecca's Comments>
+
+If we don't do EVERYTHING we will loose marks!!
+
+Also we have to store images, we are going to make a seperate table for the image as it will be huge.
+
+
+Basically no MySQL PERIOD, we are only using MySQLI you can use find and replace after if you use MySQL but we will be marked down if we don’t use MySQLI!!!!!!!!!(You can tell I am serious will all the exclamation marks)
+
+
+Also there are sooooooo many people not here he when around with the sign in sheet personally to everyone in the labs so 
