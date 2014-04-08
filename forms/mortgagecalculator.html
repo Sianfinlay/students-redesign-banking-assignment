@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="author" content="James McCartan, Sian Finlay, Rebecca Feris, Stephanie Hughes"/>
+    <meta name="description" content="This is the booking form use to send an email about a user booking a mortgage appointment"/>
+    <title>Mortgage calculator</title>
+
+    <!--==================================
+   		 JS
+    ======================================-->
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+			$("#calculate").click( function(){
+			  	var $mortReq = parseInt($("#mortReq").val());
+			  	var $repayPeriod = parseInt($("#repayPeriod").val());
+			  	var $interest = 0.05;
+			  	var $repay = $mortReq / $repayPeriod;
+			  	var $repay1 = $repay / 12;
+			  	var $repay2 = $repay1 * $interest;
+		  	
+		  		$("#repay").val($repay2);
+	  		})
+ 	 	});
+    </script>
+</head>
+
+<body>
+	<h2>Mortgage Calculator</h2>
+	<form id="mortCalc">
+		<label>Mortgage Required
+			<input type="text" id="mortReq" placeholder="Example: £100,000" />
+		</label>
+		<label>Repayment Period
+			<input type="text" id="repayPeriod" placeholder="Example: 40" /> years
+		</label>
+		<label>interest Rate
+			<input type="text" id="interest" value="5" disabled/> %
+		</label>
+		<input type="submit" id="calculate" value="CALCULATE"/>
+		<label>Monthly Repayments
+			<input type="text" id="repay" disabled/>
+		</label>
+		<input type="reset" id="clear" value="clear"/>
+	</form>
+</body>
+</html>
