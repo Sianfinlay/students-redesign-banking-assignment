@@ -29,10 +29,10 @@ o	Pattern recognition checking on the password strength using preg_match( ) shou
 
 If we don't do EVERYTHING we will loose marks!!
 
-Also we have to store images, we are going to make a seperate table for the image as it will be huge.
+Also we have to store images, we are going to make a seperate table for the images as it will make the database too big.
 
 
 Basically no MySQL PERIOD, we are only using MySQLI you can use find and replace after if you use MySQL but we will be marked down if we don’t use MySQLI!!!!!!!!!(You can tell I am serious will all the exclamation marks)
 
 
-Also there are sooooooo many people not here he when around with the sign in sheet personally to everyone in the labs so 
+Also there are sooooooo many people not here he went around with the sign in sheet personally to everyone in the labs so 
