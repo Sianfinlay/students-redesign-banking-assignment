@@ -13,11 +13,11 @@ $query = "SELECT Customer_ID , Name , Address , Martial_Status , Tel , Email FRO
 	$result = mysqli_query($conn, $query) or die("invalid query");//run query
 
 	// add classes and style helper in the variable below
-	$staff_table = "<table id=\"customer\" class=\"table-display\"><tr><th>Customer ID</th><th>Name</th><th>Address</th><th>Martial Status</th><th>Tel</th><th>Email</th></tr>";//print start of table and  table headers
+	$cust_table = "<table id=\"customer\" class=\"table-display\"><tr><th>Customer ID</th><th>Name</th><th>Address</th><th>Martial Status</th><th>Tel</th><th>Email</th></tr>";//print start of table and  table headers
 		while($rows = mysqli_fetch_array($result)){// use while loop to run throught the selected rows
-			$staff_table .= "<tr><td>".$rows["Customer_ID"]."</td><td>".$rows["Name"]."</td><td>".$rows["Address"]."</td><td>".$rows["Martial_Status"]."</td><td>".$rows["Tel"]."</td><td>".$rows["Email"]."</td></tr>";// print table rows with table rows values 
+			$cust_table .= "<tr><td>".$rows["Customer_ID"]."</td><td>".$rows["Name"]."</td><td>".$rows["Address"]."</td><td>".$rows["Martial_Status"]."</td><td>".$rows["Tel"]."</td><td>".$rows["Email"]."</td></tr>";// print table rows with table rows values 
 		}
-		$staff_table .= "</table>";//close table
+		$cust_table .= "</table>";//close table
 mysqli_close($conn);//close connection
 ?>
 <!DOCTYPE html>
