@@ -47,6 +47,6 @@ mysqli_close($conn);//close connection
 		</select>
 		<input type="submit" value="sort" name="sort">
 	</form>
-	<?php echo $staff_table; ?>
+	<?php echo $cust_table; ?>
 </body>
 </html>
