@@ -5,7 +5,7 @@ include "dbconn.php";//connect to the database
 
 $query = "SELECT Customer_ID , Name , Address , Martial_Status , Age , Income , Tel , Email FROM customer ORDER BY Customer_ID DESC LIMIT 6";//create varible for the select query 
 	$result = mysqli_query($conn, $query) or die("invalid query");//run query
-	$staff_table = "<table id=\"property\" border=\"1\" cellspacing=\"0\"><thead><h2>Customer</h2></thead><tr><th>Customer ID</th><th>Name</th><th>Address</th><th>Martial Status</th><th>Age</th><th>Income</th><th>Tel</th><th>Email</th></tr>";//print start of table and  table headers
+	$staff_table = "<table id=\"staff\" border=\"1\" cellspacing=\"0\"><tr><th>Customer ID</th><th>Name</th><th>Address</th><th>Martial Status</th><th>Age</th><th>Income</th><th>Tel</th><th>Email</th></tr>";//print start of table and  table headers
 		while($rows = mysqli_fetch_array($result)){// use while loop to run throught the selected rows
 			$staff_table .= "<tr><td>".$rows["Customer_ID"]."</td><td>".$rows["Name"]."</td><td>".$rows["Address"]."</td><td>".$rows["Martial_Status"]."</td><td>".$rows["Age"]."</td><td>".$rows["Income"]."</td><td>".$rows["Tel"]."</td><td>".$rows["Email"]."</td></tr>";// print table rows with table rows values 
 		}
