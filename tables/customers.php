@@ -38,8 +38,6 @@ mysqli_close($conn);//close connection
 			<option value="Name">Name</option>
 			<option value="Address">Address</option>
 			<option value="Martial_Status">Martial Status</option>
-			<option value="Age">Age</option>
-			<option value="Income">Income</option>
 			<option value="Tel">Tel</option>
 			<option value="Email">Email</option>
 		</select>
