@@ -14,14 +14,32 @@
     <script type="text/javascript">
     	$(document).ready(function() {
 			$("#calculate").click( function(){
-			  	var $mortReq = parseInt($("#mortReq").val());
+				var $mortReq = parseInt($("#mortReq").val());
 			  	var $repayPeriod = parseInt($("#repayPeriod").val());
 			  	var $interest = 0.05;
-			  	var $repay = $mortReq / $repayPeriod;
-			  	var $repay1 = $repay / 12;
-			  	var $repay2 = $repay1 * $interest;
-		  	
-		  		$("#repay").val($repay2);
+			  	if ($mortReq == "" && $repayPeriod == ""){
+			  		$("#status").html("Please fill out form fields.");
+			  	}
+			  	else if ($mortReq == ""){
+			  		$("#status").html("Please fill out mortgage requirements.");
+			  	}
+			  	else if ($repayPeriod == ""){
+			  		$("#status").html("Please fill out repayment period.");
+			  	}
+				else if (!$.isNumeric($mortReq)){
+					$("#status").html("Please only use numbers in the mortgage requirement field.");
+				}
+				else if (!$.isNumeric($repayPeriod)){
+					$("#status").html("Please only use numbers in the repayment period field.");
+				}
+				else{
+				  	var $repay = $mortReq / $repayPeriod;
+				  	var $repay1 = $repay / 12;
+				  	var $repay2 = $repay1 * $interest;
+			  		var $finalrepay = Math.round($repay2, 2);
+			  		$("#repay").val($finalrepay);
+				}
+			  	
 	  		})
  	 	});
     </script>
@@ -30,8 +48,8 @@
 <body>
 	<h2>Mortgage Calculator</h2>
 	<form id="mortCalc">
-		<label>Mortgage Required
-			<input type="text" id="mortReq" placeholder="Example: £100,000" />
+		<label>Mortgage Required: £
+			<input type="text" id="mortReq" placeholder="Example: 100,000" />
 		</label>
 		<label>Repayment Period
 			<input type="text" id="repayPeriod" placeholder="Example: 40" /> years
@@ -39,11 +57,12 @@
 		<label>interest Rate
 			<input type="text" id="interest" value="5" disabled/> %
 		</label>
-		<input type="submit" id="calculate" value="CALCULATE"/>
-		<label>Monthly Repayments
+		<input type="button" id="calculate" value="CALCULATE"/>
+		<label>Monthly Repayments: £
 			<input type="text" id="repay" disabled/>
 		</label>
 		<input type="reset" id="clear" value="clear"/>
+		<p id="status"></p>
 	</form>
 </body>
 </html>
